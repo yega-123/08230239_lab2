@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeshi Lhamo Portfolio</title>
+
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #ffe6f0; /* light pink background */
+      color: #000;
+      font-weight: bold;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff69b4, #ff1493); /* pink gradient header */
+      color: #fff;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fffacd; /* soft yellow on hover */
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #fff0f6; /* soft pink section background */
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ff1493; /* strong pink for headings */
+      font-weight: bold;
+    }
+
+    /* Home Section Side-by-Side Layout */
+    .home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 80px 20px;
+    }
+
+    .home img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #ff69b4;
+      object-fit: cover;
+    }
+
+    .project-card {
+      background: #ffe6f0;
+      padding: 20px;
+      margin: 15px 0;
+      border-left: 5px solid #ff1493;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateX(5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea, button {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ff69b4;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff1493;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #ff69b4, #ff1493);
+      color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <img src="yega.jpg" alt="yega">
+    <div>
+      <h1>Hello everyone it's Yeshi Lhamo here </h1>
+      <p>B.Ed ICT Student | Learning Today, Teaching Tomorrow | Lifelong Learner</p>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Yeshi Lhamo, a Bachelor of Education student specializing in ICT. 
+      I grew up in Chukha, surrounded by loving parents,
+      who have always supported my endeavors, and my two older siblings, 
+      who have been incredible role models throughout my life. I am deeply
+      passionate about teaching, travelling and exploring new cultures
+      and mostly I love listening to music, which inspires me. Serving others
+      and making a positive impact is something I strive to integrate into my 
+      daily life, balancing my personal interests with my professional growth.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Ed ICT</strong>, Samtse College of Education (2025)</li>
+      <li><strong>Class 12</strong>, Chukha Central School (2022)</li>
+      <li><strong>Class 10</strong>, Chukha Central School (2020)</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript (Beginner)</li>
+      <li>Python Programming</li>
+      <li>Database Design (SQL)</li>
+    </ul>
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Communication</li>
+      <li>Teamwork</li>
+      <li>Problem Solving</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>A simple portfolio website created using HTML and CSS.</p>
+    </div>
+    <div class="project-card">
+      <h3>E-commerce Database System</h3>
+      <p>Designed and implemented an online shopping database using RDBMS.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:yegalhamo8@gmail.com">yegalhamo8@gmail.com</a></p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Yeshi | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
